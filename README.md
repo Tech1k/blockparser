@@ -133,7 +133,7 @@ blockparser
         Build it:
 
             cd blockparser
-            make
+            ./make
 
     It crashes
     ----------
