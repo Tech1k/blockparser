@@ -554,6 +554,10 @@ static int getCoinType() {
         #if defined(LITECOIN)
             48
         #endif
+        
+        #if defined(BEYONDCOIN)
+            25
+        #endif
 
         #if defined(BITCOIN)
             0
@@ -995,6 +999,10 @@ const char *getInterestingAddr() {
     #elif defined(LITECOIN)
 
         "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o"
+
+    #elif defined(BEYONDCOIN)
+
+        "B7BqHyyrB9h7SJd8zpMpLhUHqQEVVdsUai"
 
     #elif defined(DARKCOIN)
 
