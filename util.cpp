@@ -539,24 +539,13 @@ uint8_t fromB58Digit(
 
 static int getCoinType() {
     return
-        #if defined(PROTOSHARES)
-            56
-        #endif
-
-        #if defined(DARKCOIN)
-            48 + 28
-        #endif
-
-        #if defined(PAYCON)
-            55
-        #endif
-
-        #if defined(LITECOIN)
-            48
-        #endif
         
         #if defined(BEYONDCOIN)
             25
+        #endif
+
+        #if defined(BEYONDCOINTESTNET)
+            85
         #endif
 
         #if defined(BITCOIN)
@@ -567,33 +556,6 @@ static int getCoinType() {
             0
         #endif        
         
-        #if defined(FEDORACOIN)
-            33
-        #endif
-
-        #if defined(PEERCOIN)
-            48 + 7
-        #endif
-
-        #if defined(CLAM)
-            137
-        #endif
-
-        #if defined(JUMBUCKS)
-            43
-        #endif
-
-        #if defined(DOGECOIN)
-            30
-        #endif
-
-        #if defined(MYRIADCOIN)
-            50
-        #endif
-                
-        #if defined(UNOBTANIUM)
-            130
-        #endif
     ;
 }
 
@@ -996,41 +958,13 @@ const char *getInterestingAddr() {
     
         "mxRN6AQJaDi5R6KmvMaEmZGe3n5ScV9u33"
 
-    #elif defined(LITECOIN)
-
-        "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o"
-
     #elif defined(BEYONDCOIN)
 
         "B7BqHyyrB9h7SJd8zpMpLhUHqQEVVdsUai"
 
-    #elif defined(DARKCOIN)
+    #elif defined(BEYONDCOINTESTNET)
 
-        "XnuCAYmAiVHE6Xv3D7Xw685wWzqtcfexLh"
-
-    #elif defined(PEERCOIN)
-
-        "PDH9AeruMUGh2JzYYTpaNtjLAcfGV5LEto"
-
-    #elif defined(CLAM)
-
-        "xQKq1LwJQQkg1A5cmB9znGozCKLkAaKJHW"
-
-    #elif defined(PAYCON)
-
-        "PShpEEfcy8UrBPWoefsNnq8oz6bX7dNxnP"
-
-    #elif defined(JUMBUCKS)
-
-        "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM"
-
-    #elif defined(MYRIADCOIN)
-
-        "MDiceoNDTQboRxYKMTstxxRBY493Lg9bV2"
-
-    #elif defined(UNOBTANIUM)
-
-        "udicetdXSo6Zc7vhWgAZfz4XrwagAX34RK"
+        "B7BqHyyrB9h7SJd8zpMpLhUHqQEVVdsUai"
 
     #else
 

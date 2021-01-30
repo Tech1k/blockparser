@@ -83,12 +83,6 @@ static double getMem() {
     static const uint32_t gExpectedMagic = 0x0709110b;
 #endif
 
-#if defined LITECOIN
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".litecoin";
-    static const uint32_t gExpectedMagic = 0xdbb6c0fb;
-#endif
-
 #if defined BEYONDCOIN
     static const size_t gHeaderSize = 80;
     static auto kCoinDirName = ".beyondcoin";
@@ -99,60 +93,6 @@ static double getMem() {
     static const size_t gHeaderSize = 80;
     static auto kCoinDirName = ".beyondcoin/testnet3";
     static const uint32_t gExpectedMagic = 0x81d7e2b7;
-#endif
-
-#if defined DARKCOIN
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".darkcoin";
-    static const uint32_t gExpectedMagic = 0xbd6b0cbf;
-#endif
-
-#if defined PROTOSHARES
-    static const size_t gHeaderSize = 88;
-    static auto kCoinDirName = ".protoshares";
-    static const uint32_t gExpectedMagic = 0xd9b5bdf9;
-#endif
-
-#if defined FEDORACOIN
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".fedoracoin";
-    static const uint32_t gExpectedMagic = 0xdead1337;
-#endif
-
-#if defined PEERCOIN
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".ppcoin";
-    static const uint32_t gExpectedMagic = 0xe5e9e8e6;
-#endif
-
-#if defined CLAM
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".clam";
-    static const uint32_t gExpectedMagic = 0x15352203;
-#endif
-
-#if defined PAYCON
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".PayCon";
-    static const uint32_t gExpectedMagic = 0x2d3b3c4b;
-#endif
-
-#if defined JUMBUCKS
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".coinmarketscoin";
-    static const uint32_t gExpectedMagic = 0xb6f1f4fc;
-#endif
-
-#if defined MYRIADCOIN
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".myriadcoin";
-    static const uint32_t gExpectedMagic = 0xee7645af;
-#endif
-
-#if defined UNOBTANIUM
-    static const size_t gHeaderSize = 80;
-    static auto kCoinDirName = ".unobtanium";
-    static const uint32_t gExpectedMagic = 0x03b5d503;
 #endif
 
 #define DO(x) x

@@ -9,7 +9,7 @@
 
 #define TEST_ACTIVE true
 
-#if defined(LITECOIN)
+#if defined(BEYONDCOIN)
 
     #define EQUIV_LIST                                                                      \
         X("LiZZFKc7nqhw5EqFCZKcm9LYqidDo1w5z3", "ffffffffffffffffffffffffffffffffffffffff") \
