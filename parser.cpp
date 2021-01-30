@@ -95,6 +95,12 @@ static double getMem() {
     static const uint32_t gExpectedMagic = 0xa7c0d29c;
 #endif
 
+#if defined BEYONDCOINTESTNET
+    static const size_t gHeaderSize = 80;
+    static auto kCoinDirName = ".beyondcoin/testnet3";
+    static const uint32_t gExpectedMagic = 0x81d7e2b7;
+#endif
+
 #if defined DARKCOIN
     static const size_t gHeaderSize = 80;
     static auto kCoinDirName = ".darkcoin";
