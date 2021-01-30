@@ -1,6 +1,6 @@
 // Copyright (c) 2013 NovaCoin Developers
 
-#if !defined(BITCOIN)
+#if !defined(BEYONDCOIN)
 
 #include <string.h>
 #include <stdint.h>
